@@ -1,0 +1,236 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Ensure the page takes the full height of the viewport */
+}
+
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Make sure the dashboard container takes up remaining space */
+}
+
+header {
+    background: #007bff;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logout-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+nav {
+    background: #333;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    padding: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+img {
+    width: 30%;
+    height: 30%;
+    opacity: 0.5;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+footer {
+    width: 100%;
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    margin-top: 20px; /* Space after table */
+}
+
+
+
+.container {
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h2.title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Table Styling */
+/* Center the table horizontally */
+.student-table {
+    width: 80%; /* Adjust as needed */
+    margin: 0 auto; /* Centers the table horizontally */
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Styling for table headers and cells */
+th, td {
+    padding: 12px;
+    border: 1px solid black;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+/* Zebra striping for better readability */
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Hover effect */
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Styling for the buttons, table, and form */
+.btn-update, .btn-delete {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.btn-update:hover, .btn-delete:hover {
+    background-color: #45a049;
+}
+
+.btn-delete {
+    background-color: #f44336;
+}
+
+.btn-delete:hover {
+    background-color: #e53935;
+}
+
+.student-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.student-table th, .student-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.student-table th {
+    background-color: #f2f2f2;
+}
+
+.alert-success {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.logout-btn {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* Ensure table is responsive on smaller screens */
+@media (max-width: 768px) {
+    .student-table {
+        width: 100%;
+    }
+
+    th, td {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
+
+/* Styling for success message */
+.alert-success {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
