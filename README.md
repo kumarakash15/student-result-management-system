@@ -12,3 +12,5 @@ this is student result management project
 8) click on import
 9) now uplode rms.sql(it is in db folder)
 10) now click import
+11) userid - admin
+12) password - admin
